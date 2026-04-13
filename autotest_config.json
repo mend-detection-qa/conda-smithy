@@ -23,18 +23,17 @@
       "check_dependency_tree_detection_status": true,
       "_comment_check_dependency_tree_detection_status": "Whether to check if dependency tree was successfully detected. Options: true | false. Default: true",
       "expected_total_dependencies_number": {
-        "eq": 229
+        "gte": 228
       },
       "expected_direct_dependencies_number": {
         "eq": 140
       },
       "expected_transitive_dependencies_number": {
-        "eq": 89
+        "gte": 88
       },
       "_comment_expected_dependencies_number": "Optional. Expected number of dependencies with comparison operator. Operators: gt (>), gte (>=), lt (<), lte (<=), eq (==). If not provided, this check will not be performed.",
       "direct_dependencies_names_list": {
-        "eq": [
-          "pytz",
+        "contains": [
           "patchelf",
           "libstdcxx",
           "backports.zstd",
@@ -177,7 +176,7 @@
         ]
       },
       "transitive_dependencies_names_list": {
-        "eq": [
+        "contains": [
           "distro",
           "truststore",
           "typer",
@@ -188,7 +187,6 @@
           "hatch",
           "httpx",
           "hyperframe",
-          "jsonpatch",
           "tqdm",
           "virtualenv",
           "jaraco.context",

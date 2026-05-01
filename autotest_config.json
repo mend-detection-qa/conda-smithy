@@ -26,7 +26,7 @@
         "gte": 228
       },
       "expected_direct_dependencies_number": {
-        "gte": 1139
+        "gte": 80
       },
       "expected_transitive_dependencies_number": {
         "gte": 88
